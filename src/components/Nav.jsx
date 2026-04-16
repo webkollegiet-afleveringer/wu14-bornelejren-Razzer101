@@ -1,19 +1,42 @@
+import { useState } from "react";
+import { IoClose, IoMenu } from "react-icons/io5";
 import { Link } from "react-router";
 
 export default function Nav(){
+
+    const [menuDisplay, setMenuDisplay] = useState(false)
+
     return(
-        <nav className="flex items-center pr-5 mb-1">
-            <ul className="flex gap-8">
-                <li className="text-2xl hover:underline">
+        <nav className="flex items-center pr-[2vw] mb-1">
+            <ul className="gap-7 hidden sm:flex">
+                <li className="text-2xl font-semibold hover:underline">
                     <Link to={"/"}>Home</Link>
                 </li>
-                <li className="text-2xl hover:underline">
+                <li className="text-2xl font-semibold hover:underline">
                     <Link to={"/omos"}>Om os</Link>
                 </li>
-                <li className="text-2xl hover:underline">
+                <li className="text-2xl font-semibold hover:underline">
                     <Link to={"/sponsering"}>Sponsering</Link>
                 </li>
-                <li className="text-2xl hover:underline">
+                <li className="text-2xl font-semibold hover:underline">
+                    <Link to={"/takker"}>Vi takker</Link>
+                </li>
+            </ul>
+            <button onClick={() => setMenuDisplay(menuDisplay ? false : true)} className="sm:hidden text-5xl border-2 p-1 rounded-sm">
+                <IoMenu className={`${menuDisplay ? "hidden" : ""}`} />
+                <IoClose className={`${menuDisplay ? "" : "hidden"}`}/>
+            </button>
+            <ul className={`${menuDisplay ? "flex" : "hidden"} flex-col items-center sm:hidden h-[calc(100%-89px)] gap-5 py-5 w-[50%] bg-white border-l-2 border-main absolute top-22.25 right-0`}>
+                <li className="text-2xl font-semibold hover:underline">
+                    <Link to={"/"}>Home</Link>
+                </li>
+                <li className="text-2xl font-semibold hover:underline">
+                    <Link to={"/omos"}>Om os</Link>
+                </li>
+                <li className="text-2xl font-semibold hover:underline">
+                    <Link to={"/sponsering"}>Sponsering</Link>
+                </li>
+                <li className="text-2xl font-semibold hover:underline">
                     <Link to={"/takker"}>Vi takker</Link>
                 </li>
             </ul>
