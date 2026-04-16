@@ -10,8 +10,8 @@ function App() {
       <Routes>
         <Route index element={<Home/>}/>
         <Route path='/omos' element={<AboutUs/>} />
-        <Route path='/sponsor' element={<Sponsor/>} />
-        <Route path='/thanks' element={<Thanks/>} />
+        <Route path='/sponsering' element={<Sponsor/>} />
+        <Route path='/takker' element={<Thanks/>} />
       </Routes>
     </BrowserRouter>
   )
