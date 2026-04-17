@@ -2,7 +2,7 @@ import { IoCall, IoLogoFacebook, IoMail } from "react-icons/io5";
 
 export default function Footer(){
     return(
-        <footer className="bg-main fixed bottom-0 w-full text-white grid grid-cols-2 md:flex justify-between px-4 sm:px-[5vw] py-2 font-semibold text-base">
+        <footer className="bg-main sm:fixed sm:bottom-0 w-full text-white grid grid-cols-2 md:flex justify-between px-4 sm:px-[5vw] py-2 font-semibold text-base">
             <ul className="flex flex-col mb-4 md:mb-0">
                 <li>
                     <h2 className="font-bold text-xl">Sted</h2>
@@ -41,7 +41,7 @@ export default function Footer(){
                 </li>
                 <li className="flex justify-end md:justify-start">
                     <IoLogoFacebook className="text-xl mt-0.5 mr-0.5 "/>
-                    <a href="https://www.facebook.com/Boernelejren" className="underline">Facebook</a>
+                    <a href="https://www.facebook.com/Boernelejren" target="_blank" className="underline">Facebook</a>
                 </li>
             </ul>
         </footer>
