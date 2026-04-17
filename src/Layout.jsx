@@ -7,7 +7,7 @@ export default function Layout(){
         <>
             <header className="flex bg-main justify-between">
                 <Link to={"/"} className="w-45 p-2">
-                    <img src="/logo.png" alt="Logo" className="w-full rounded-sm"/>
+                    <img src="/logo.svg" alt="Logo" className="w-full rounded-sm"/>
                 </Link>
                 <Nav/>
             </header>

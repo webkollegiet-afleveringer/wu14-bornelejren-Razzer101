@@ -5,7 +5,7 @@ export default function Footer(){
         <footer className="bg-main fixed bottom-0 w-full text-white grid grid-cols-2 md:flex justify-between px-4 sm:px-[5vw] py-2 font-semibold text-base">
             <ul className="flex flex-col mb-4 md:mb-0">
                 <li>
-                    <h3 className="font-bold text-xl">Sted</h3>
+                    <h2 className="font-bold text-xl">Sted</h2>
                 </li>
                 <li>
                     <p>Knud Bro Alle 1</p>
@@ -16,7 +16,7 @@ export default function Footer(){
             </ul>
             <ul className="flex flex-col mb-4 md:mb-0 text-end md:text-start">
                 <li>
-                    <h3 className="font-bold text-xl">Kontakt</h3>
+                    <h2 className="font-bold text-xl">Kontakt</h2>
                 </li>
                 <li className="flex justify-end md:justify-start">
                     <IoCall className="text-xl mt-0.5 mr-0.5"/>
@@ -29,7 +29,7 @@ export default function Footer(){
             </ul>
             <ul className="flex flex-col">
                 <li>
-                    <h3 className="font-bold text-xl">Mobilpay</h3>
+                    <h2 className="font-bold text-xl">Mobilpay</h2>
                 </li>
                 <li>
                     <p>27231</p>
@@ -37,7 +37,7 @@ export default function Footer(){
             </ul>
             <ul className="flex flex-col text-end md:text-start">
                 <li>
-                    <h3 className="font-bold text-xl">Vores opslag</h3>
+                    <h2 className="font-bold text-xl">Vores opslag</h2>
                 </li>
                 <li className="flex justify-end md:justify-start">
                     <IoLogoFacebook className="text-xl mt-0.5 mr-0.5 "/>
