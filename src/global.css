@@ -8,3 +8,11 @@ h1, h2, h3, h4, h5, h6{
 @theme{
   --color-main: #d0000b
 }
+
+.footer-grid{
+  grid-template-rows: 3;
+}
+
+.locations-grid{
+  grid-row: 1/4;
+}
