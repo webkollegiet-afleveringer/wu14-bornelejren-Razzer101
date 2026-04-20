@@ -13,7 +13,7 @@ export default function Home(){
                     <img src="/back.jpg" alt="Gården" className="w-full object-contain sm:w-[55%]"/>
                 </figure>
             </section>
-            <section className="mb-5 sm:mb-30 px-4 sm:px-6">
+            <section className="mb-5 sm:mb-70 px-4 sm:px-6">
                 <p className="mb-4">
                     Der er mange børn i verden, der ikke har det så godt, som de burde have det. Det gælder
                     desværre også i Danmark. Der er børn med medfødte handicap, børn der er blevet
