@@ -10,9 +10,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .footer-grid{
-  grid-template-rows: 3;
+  grid-template-rows: 2;
 }
 
 .locations-grid{
-  grid-row: 1/4;
+  grid-row: 1/3;
 }
