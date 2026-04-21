@@ -8,7 +8,7 @@ export default function Home(){
                     stillede børn og unge sammen med deres pædagoger på et ophold i landlige omgivelser på
                     det naturskønne Sydlangeland.
                 </p>
-                <figure className="flex gap-5 justify-center px-10">
+                <figure className="flex gap-5 justify-center px-10 md:px-[10vw]">
                     <img src="/front.jpg" alt="Gården" className="w-[40%] hidden sm:block"/>
                     <img src="/back.jpg" alt="Gården" className="w-full object-contain sm:w-[55%]"/>
                 </figure>
