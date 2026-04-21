@@ -3,7 +3,7 @@ export default function Home(){
         <>
             <h1 className="text-center text-4xl font-bold my-3">Velkommen</h1>
             <section className="grid gap-5 mb-4">
-                <p className="order-1 sm:order-0 px-4 sm:px-6">
+                <p className="order-1 sm:order-0 px-4 sm:px-6 text-xl">
                     Børnelejren på Langeland er en forening, der udelukkende har til formål at sende dårligt
                     stillede børn og unge sammen med deres pædagoger på et ophold i landlige omgivelser på
                     det naturskønne Sydlangeland.
@@ -14,7 +14,7 @@ export default function Home(){
                 </figure>
             </section>
             <section className="mb-5 sm:mb-70 px-4 sm:px-6">
-                <p className="mb-4">
+                <p className="mb-4 text-xl">
                     Der er mange børn i verden, der ikke har det så godt, som de burde have det. Det gælder
                     desværre også i Danmark. Der er børn med medfødte handicap, børn der er blevet
                     alvorligt syge, børn der lider under omsorgssvigt eller bliver udsat for overgreb, børn der
@@ -24,7 +24,7 @@ export default function Home(){
                     disse grupper, og det er disse børn, vi gerne vil gøre noget for.
                 </p>
                 
-                <p>
+                <p className="text-xl">
                     Foreningen Børnelejren på Langeland samler penge ind fra erhvervslivet, fonde og private
                     til at sende dårligt stillede børn på et velfortjent lejrophold på Søgård. <b>Hjælp os med at
                     hjælpe dem!</b>
