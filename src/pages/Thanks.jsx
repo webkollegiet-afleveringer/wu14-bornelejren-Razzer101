@@ -9,19 +9,19 @@ export default function Thanks(){
                 virksomhedssponsorer og donationer fra fonde.
             </p>
             <section className="text-center text-2xl font-bold my-3 base: mb-35 sm:mb-36 md:mb-55 lg:mb-63 2xl:mb-90">
-                <h2>En særlig tak til:</h2>
+                <h2 className="mb-3">En særlig tak til:</h2>
                 <ul className="font-normal text-xl">
-                    <li>
-                        <p>Navn:</p>
+                    <li className="mb-3">
+                        <p>(Navn)</p>
                     </li>
-                    <li>
-                        <p>Navn:</p>
+                    <li className="mb-3">
+                        <p>(Navn)</p>
                     </li>
-                    <li>
-                        <p>Navn:</p>
+                    <li className="mb-3">
+                        <p>(Navn)</p>
                     </li>
-                    <li>
-                        <p>Navn:</p>
+                    <li className="mb-3">
+                        <p>(Navn)</p>
                     </li>
                 </ul>
             </section>
