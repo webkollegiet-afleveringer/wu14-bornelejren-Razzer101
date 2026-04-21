@@ -159,7 +159,7 @@ export default function SponsorForm(){
                     </ul>
                 </label>
             </fieldset>
-            <button type="submit" className="w-full text-white bg-main rounded-sm py-2 text-xl font-bold">Registrer</button>
+            <button type="submit" className="w-full text-white bg-main rounded-sm py-2 text-xl font-bold hover:bg-red-500">Registrer</button>
         </form>
     )
 }

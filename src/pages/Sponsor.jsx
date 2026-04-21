@@ -10,7 +10,7 @@ export default function Sponsor(){
 
     return(
         <>
-            <h1 className="text-center text-4xl font-bold my-3">Tilmelding Som Sponsor</h1>
+            <h1 className="text-center text-4xl font-bold my-5">Tilmelding Som Sponsor</h1>
             <section className="mb-4 px-4 sm:px-20">
                 <h2 className="mb-5 text-xl">
                     Da det er meget individuelt, hvor meget en virksomhed kan og ønsker at støtte med, har vi

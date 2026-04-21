@@ -1,7 +1,7 @@
 export default function Home(){
     return(
         <>
-            <h1 className="text-center text-4xl font-bold my-3">Velkommen</h1>
+            <h1 className="text-center text-4xl font-bold my-5">Velkommen</h1>
             <section className="grid gap-5 mb-4">
                 <p className="order-1 sm:order-0 px-4 sm:px-6 text-xl">
                     Børnelejren på Langeland er en forening, der udelukkende har til formål at sende dårligt

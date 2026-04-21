@@ -1,7 +1,7 @@
 export default function AboutUs(){
     return(
         <>
-            <h1 className="text-center text-4xl font-bold my-3">Om os</h1>
+            <h1 className="text-center text-4xl font-bold my-5">Om os</h1>
             <section className="mb-5 px-4 sm:px-6 grid lg:grid-cols-2 gap-5">
                 <p className="text-xl">
                     Børnelejren på Langeland er en velgørende, non-profit forening, som afholder
