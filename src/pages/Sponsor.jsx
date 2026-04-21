@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { IoCaretDown, IoCaretForward } from "react-icons/io5"
+import SponsorForm from "../components/SponsorForm"
 
 export default function Sponsor(){
 
@@ -11,10 +12,10 @@ export default function Sponsor(){
         <>
             <h1 className="text-center text-4xl font-bold my-3">Tilmelding Som Sponsor</h1>
             <section className="mb-4 px-4 sm:px-20">
-                <p className="mb-5 text-xl">
+                <h2 className="mb-5 text-xl">
                     Da det er meget individuelt, hvor meget en virksomhed kan og ønsker at støtte med, har vi
                     opdelt støttemulighederne i <b>3 kategorier</b>:
-                </p>
+                </h2>
                 <div className="mb-5 flex flex-col">
                     <button onClick={() => {
                         setSponsDisplay1(sponsDisplay1 ? false : true);
@@ -24,7 +25,7 @@ export default function Sponsor(){
                         <span>Børnesponsorat</span>
                         <span><IoCaretForward className={`${sponsDisplay1 ? "hidden" : "block"} text-3xl`}/> <IoCaretDown className={`${sponsDisplay1 ? "block" : "hidden"} text-3xl`}/></span>
                     </button>
-                    <p className={`${sponsDisplay1 ? "block" : "hidden"} border-b-2 border-x-2 p-3 border-main rounded-b-sm`}>
+                    <p className={`${sponsDisplay1 ? "block" : "hidden"} border-b-2 border-x-2 p-3 text-xl border-main rounded-b-sm`}>
                         Hvis din virksomhed vælger at blive børnesponsor, dækker I omkostningerne for et
                         navngivet barns ophold og transport til og fra Langeland. Prisen pr. barn varierer fra lejr til
                         lejr, men vi har fastsat en gennemsnitspris på kr. 4.000,- pr. barn for et ophold. Denne pris
@@ -41,7 +42,7 @@ export default function Sponsor(){
                         <span>Lejrsponsorat</span>
                         <span><IoCaretForward className={`${sponsDisplay2 ? "hidden" : "block"} text-3xl`}/> <IoCaretDown className={`${sponsDisplay2 ? "block" : "hidden"} text-3xl`}/></span>
                     </button>
-                    <p className={`${sponsDisplay2 ? "block" : "hidden"} border-b-2 border-x-2 p-3 border-main rounded-b-sm`}>
+                    <p className={`${sponsDisplay2 ? "block" : "hidden"} border-b-2 border-x-2 p-3 text-xl border-main rounded-b-sm`}>
                         For kr. 2.000,- kan virksomheden blive lejrsponsor og være med til at dække alle
                         omkostningerne ved børnelejren, som bl.a. omfatter ejendommens drifts- og
                         vedligeholdelsesomkostninger samt eventuelle ekstra udgifter omkring en lejr, der f.eks.
@@ -57,7 +58,7 @@ export default function Sponsor(){
                         <span>Støtte til foreningen</span>
                         <span><IoCaretForward className={`${sponsDisplay3 ? "hidden" : "block"} text-3xl`}/> <IoCaretDown className={`${sponsDisplay3 ? "block" : "hidden"} text-3xl`}/></span>
                     </button>
-                    <p className={`${sponsDisplay3 ? "block" : "hidden"} border-b-2 border-x-2 p-3 border-main rounded-b-sm`}>
+                    <p className={`${sponsDisplay3 ? "block" : "hidden"} border-b-2 border-x-2 p-3 text-xl border-main rounded-b-sm`}>
                         Virksomheder, der ønsker at støtte foreningens arbejde med et mindre beløb, kan vælge
                         at blive diplomsponsorer. Af administrative årsager skal der minimum støttes med kr.
                         1.000,- for at man kan modtage et trykt diplom til ophængning i virksomheden, men alle
@@ -65,6 +66,7 @@ export default function Sponsor(){
                     </p>
                 </div>
             </section>
+            <SponsorForm/>
         </>
     )
 }
