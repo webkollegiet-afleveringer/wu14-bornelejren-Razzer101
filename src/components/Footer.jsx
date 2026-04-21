@@ -2,7 +2,7 @@ import { IoCall, IoLogoFacebook, IoLogoInstagram, IoMail } from "react-icons/io5
 
 export default function Footer(){
     return(
-        <footer className="bg-main sm:fixed sm:bottom-0 w-full text-white grid grid-cols-2 footer-grid md:flex justify-between px-4 sm:px-[5vw] py-2 font-semibold text-base">
+        <footer className="bg-main w-full text-white grid grid-cols-2 footer-grid md:flex justify-between px-4 sm:px-[5vw] py-2 font-semibold text-base">
             <ul className="flex flex-col mb-4 md:mb-0 locations-grid">
                 <li>
                     <h2 className="font-bold text-xl">lokationer</h2>

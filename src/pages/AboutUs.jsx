@@ -2,7 +2,7 @@ export default function AboutUs(){
     return(
         <>
             <h1 className="text-center text-4xl font-bold my-3">Om os</h1>
-            <section className="mb-15 sm:mb-30 px-4 sm:px-6">
+            <section className="mb-5 px-4 sm:px-6 md:mb-26 lg:mb-41 xl:mb-47 2xl:mb-81">
                 <p className="mb-4 text-xl">
                     Børnelejren på Langeland er en velgørende, non-profit forening, som afholder
                     finansierede lejre for dårligt stillede børn og unge fra hele landet. Børnelejrene bliver

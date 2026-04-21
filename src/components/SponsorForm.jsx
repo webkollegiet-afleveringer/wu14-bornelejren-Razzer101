@@ -84,7 +84,7 @@ export default function SponsorForm(){
     }
 
     return(
-        <form onSubmit={submithandler} className="px-4 py-3 mx-4 sm:mx-20 mb-15 sm:mb-60 border-2 border-main rounded-sm">
+        <form onSubmit={submithandler} className="px-4 py-3 mx-4 sm:mx-20 mb-5 border-2 border-main rounded-sm">
             <fieldset className="flex flex-col mb-3">
                 <legend className="text-2xl text-center font-semibold mb-3">Registrering</legend>
                 <label htmlFor="name" className="mb-3 flex flex-col">
