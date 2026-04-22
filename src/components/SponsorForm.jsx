@@ -89,7 +89,7 @@ export default function SponsorForm(){
                 <legend className="text-2xl text-center font-semibold mb-3">Registrering</legend>
                 <label htmlFor="name" className="mb-3 flex flex-col">
                     <span className="text-xl">Firmanavn:</span>
-                    <input id="name" name="name" type="text" className="border-2 border-main rounded-sm text-xl w-full"/>
+                    <input onChange={() => onChangeHandler(event)} id="name" name="name" type="text" className="border-2 border-main rounded-sm text-xl w-full"/>
                     <ul>
                         {
                             nameError.name?.errors.map(
@@ -100,7 +100,7 @@ export default function SponsorForm(){
                 </label>
                 <label htmlFor="email" className="mb-3 flex flex-col">
                     <span className="text-xl">Email:</span>
-                    <input id="email" name="email" type="email" className="border-2 border-main rounded-sm text-xl w-full"/>
+                    <input onChange={() => onChangeHandler(event)} id="email" name="email" type="email" className="border-2 border-main rounded-sm text-xl w-full"/>
                     <ul>
                         {
                             emailError.email?.errors.map(
@@ -111,7 +111,7 @@ export default function SponsorForm(){
                 </label>
                 <label htmlFor="address" className="mb-3 flex flex-col">
                     <span className="text-xl">Firma adresse:</span>
-                    <input id="address" name="address" type="text" className="border-2 border-main rounded-sm text-xl w-full"/>
+                    <input onChange={() => onChangeHandler(event)} id="address" name="address" type="text" className="border-2 border-main rounded-sm text-xl w-full"/>
                     <ul>
                         {
                             addressError.address?.errors.map(
@@ -122,7 +122,7 @@ export default function SponsorForm(){
                 </label>
                 <label htmlFor="phone" className="mb-3 flex flex-col">
                     <span className="text-xl">Telefon:</span>
-                    <input id="phone" name="phone" type="tel" className="border-2 border-main rounded-sm text-xl w-full"/>
+                    <input onChange={() => onChangeHandler(event)} id="phone" name="phone" type="tel" className="border-2 border-main rounded-sm text-xl w-full"/>
                     <ul>
                         {
                             phoneError.phone?.errors.map(
@@ -133,7 +133,7 @@ export default function SponsorForm(){
                 </label>
                 <label htmlFor="options" className="mb-3 flex flex-col">
                     <span className="text-xl">Støttemuligheder:</span>
-                    <select id="options" name="options" className="border-2 border-main rounded-sm text-xl w-full">
+                    <select onChange={() => onChangeHandler(event)} id="options" name="options" className="border-2 border-main rounded-sm text-xl w-full">
                         <option value="">Vælg en af muglighederne</option>
                         <option value="børnesponsorat">Børnesponsorat</option>
                         <option value="lejrsponsorat">Lejrsponsorat</option>
@@ -149,7 +149,7 @@ export default function SponsorForm(){
                 </label>
                 <label htmlFor="amount" className="flex flex-col">
                     <span className="text-xl">Beløb:</span>
-                    <input id="amount" name="amount" type="number" className="border-2 border-main rounded-sm text-xl w-full"/>
+                    <input onChange={() => onChangeHandler(event)} id="amount" name="amount" type="number" className="border-2 border-main rounded-sm text-xl w-full"/>
                     <ul>
                         {
                             amountError.amount?.errors.map(
