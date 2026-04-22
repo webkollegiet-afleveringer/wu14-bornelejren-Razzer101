@@ -1,4 +1,9 @@
+import { useLoaderData } from "react-router"
+
 export default function Thanks(){
+
+    const {sponsorNames: nameData} = useLoaderData()
+
     return(
         <>
             <h1 className="text-center text-4xl font-bold my-5">Børnelejren takker</h1>
@@ -11,18 +16,13 @@ export default function Thanks(){
             <section className="text-center text-2xl font-bold my-3 base: mb-35 sm:mb-36 md:mb-55 lg:mb-63 2xl:mb-90">
                 <h2 className="mb-3">En særlig tak til:</h2>
                 <ul className="font-normal text-xl">
-                    <li className="mb-3">
-                        <p>(Navn)</p>
-                    </li>
-                    <li className="mb-3">
-                        <p>(Navn)</p>
-                    </li>
-                    <li className="mb-3">
-                        <p>(Navn)</p>
-                    </li>
-                    <li className="mb-3">
-                        <p>(Navn)</p>
-                    </li>
+                    {
+                        nameData.map((itemName, index) => {
+                            return(
+                                <li className="mb-3" key={index}>{itemName}</li>
+                            )
+                        })
+                    }
                 </ul>
             </section>
         </>

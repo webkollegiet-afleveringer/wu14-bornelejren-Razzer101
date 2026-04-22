@@ -24,7 +24,12 @@ function App() {
       },
       {
         path: "/takker",
-        element: <Thanks/>
+        element: <Thanks/>,
+        loader: async () => {
+          const sponsorNames = await fetch("/sponsor.json").then((response) => response.json())
+          return { sponsorNames }
+        },
+        hydrateFallbackElement: <p>loading...</p>
       }
     ]
   }])

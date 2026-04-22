@@ -15,7 +15,7 @@ export default function AboutUs(){
                     <img src="/center.jpg" alt="Gården" className="w-full"/>
                 </figure>
             </section>
-            <section className="mb-5 px-4 sm:px-6 md:mb-26 lg:mb-41 xl:mb-47 2xl:mb-81">
+            <section className="mb-5 px-4">
                 <p className="mb-4 text-xl">
                     Foreningens bestyrelse og frivillige hjælpere arbejder ulønnet for Foreningen.
                     Medarbejderne fra institutionerne på foreningens lejre, får ikke kolonitillæg udbetalt af

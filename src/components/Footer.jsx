@@ -3,7 +3,7 @@ import { IoCall, IoLogoFacebook, IoLogoInstagram, IoMail } from "react-icons/io5
 export default function Footer(){
     return(
         <footer className="bg-main w-full text-white sm:flex justify-between px-4 sm:px-6 py-2 sm:py-4 font-semibold gap-2">
-            <section className="grid grid-cols-2 footer-grid sm:w-[70%] mb-3 sm:mb-0 border-b-3 sm:border-b-0 sm:border-r-3 pr-3">
+            <section className="grid grid-cols-2 footer-grid sm:w-[70%] mb-3 sm:mb-0 border-b-3 sm:border-b-0 sm:border-r-3 pr-6">
                 <ul className="flex flex-col mb-4 md:mb-0 locations-grid">
                     <li>
                         <h3 className="font-bold text-xl md:text-2xl">Lokationer</h3>
@@ -41,7 +41,7 @@ export default function Footer(){
                     </li>
                 </ul>
             </section>
-            <ul className="flex flex-col md:text-start sm:w-[30%]">
+            <ul className="flex flex-col md:text-start sm:w-[26.8%]">
                 <li>
                     <h3 className="font-bold text-xl md:text-2xl">Vores opslag</h3>
                 </li>
