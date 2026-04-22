@@ -13,7 +13,7 @@ export default function Thanks(){
                 - det være sig ved naturaliesponsorater eller økonomisk støtte fra støttemedlemmer,
                 virksomhedssponsorer og donationer fra fonde.
             </p>
-            <section className="text-center text-2xl font-bold my-3 base: mb-35 sm:mb-36 md:mb-55 lg:mb-63 2xl:mb-90">
+            <section className="text-center text-2xl font-bold my-3 base: mb-5 md:mb-17 lg:mb-24">
                 <h2 className="mb-3">En særlig tak til:</h2>
                 <ul className="font-normal text-xl">
                     {
