@@ -14,37 +14,49 @@ export default function Sponsor(){
     const info1 = useRef()
     const info2 = useRef()
     const info3 = useRef()
+    const button1 = useRef()
+    const button2 = useRef()
+    const button3 = useRef()
     const handleClick = (id) => {
         if(id === "børnesponsorat"){
             setSponsDisplay1(sponsDisplay1 ? false : true);
             sponsDisplay1 ? gsap.to(carretArrow1.current, {rotateZ: 0,duration: 0.2}) : gsap.to(carretArrow1.current, {rotateZ: 90,duration: 0.2})
             sponsDisplay1 ? gsap.to(info1.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2}) : gsap.to(info1.current, {height: "auto", borderBottom: "2px solid #d0000b", paddingTop: "12px", paddingBottom: "12px", duration: 0.2})
+            sponsDisplay1 ? gsap.to(button1.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2}) : gsap.to(button1.current, {borderBottomLeftRadius: 0, borderBottomRightRadius: 0, duration: 0.2})
             setSponsDisplay2(false)
             gsap.to(carretArrow2.current, {rotateZ: 0,duration: 0.2})
             gsap.to(info2.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2})
+            gsap.to(button2.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2})
             setSponsDisplay3(false)
             gsap.to(carretArrow3.current, {rotateZ: 0,duration: 0.2})
             gsap.to(info3.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2})
+            gsap.to(button3.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2})
         } else if(id === "lejrsponsorat"){
             setSponsDisplay2(sponsDisplay2 ? false : true);
             sponsDisplay2 ? gsap.to(carretArrow2.current, {rotateZ: 0,duration: 0.2}) : gsap.to(carretArrow2.current, {rotateZ: 90,duration: 0.2})
             sponsDisplay2 ? gsap.to(info2.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2}) : gsap.to(info2.current, {height: "auto", borderBottom: "2px solid #d0000b", paddingTop: "12px", paddingBottom: "12px", duration: 0.2})
+            sponsDisplay2 ? gsap.to(button2.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2}) : gsap.to(button2.current, {borderBottomLeftRadius: 0, borderBottomRightRadius: 0, duration: 0.2})
             setSponsDisplay1(false)
             gsap.to(carretArrow1.current, {rotateZ: 0,duration: 0.2})
             gsap.to(info1.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2})
+            gsap.to(button1.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2})
             setSponsDisplay3(false)
             gsap.to(carretArrow3.current, {rotateZ: 0,duration: 0.2})
             gsap.to(info3.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2})
+            gsap.to(button3.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2})
         } else if(id === "foreningen"){
             setSponsDisplay3(sponsDisplay3 ? false : true);
             sponsDisplay3 ? gsap.to(carretArrow3.current, {rotateZ: 0,duration: 0.2}) : gsap.to(carretArrow3.current, {rotateZ: 90,duration: 0.2})
             sponsDisplay3 ? gsap.to(info3.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2}) : gsap.to(info3.current, {height: "auto", borderBottom: "2px solid #d0000b", paddingTop: "12px", paddingBottom: "12px", duration: 0.2})
+            sponsDisplay3 ? gsap.to(button3.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2}) : gsap.to(button3.current, {borderBottomLeftRadius: 0, borderBottomRightRadius: 0, duration: 0.2})
             setSponsDisplay1(false)
             gsap.to(carretArrow1.current, {rotateZ: 0,duration: 0.2})
             gsap.to(info1.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2})
+            gsap.to(button1.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2})
             setSponsDisplay2(false)
             gsap.to(carretArrow2.current, {rotateZ: 0,duration: 0.2})
             gsap.to(info2.current, {height: "0", borderBottom: "none", paddingTop: "0", paddingBottom: "0", duration: 0.2})
+            gsap.to(button2.current, {borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px", duration: 0.2})
         }
     }
 
@@ -57,7 +69,7 @@ export default function Sponsor(){
                     opdelt støttemulighederne i <b>3 kategorier</b>:
                 </h2>
                 <div className="mb-5 flex flex-col">
-                    <button onClick={() => handleClick("børnesponsorat")} className={`font-bold text-xl text-start p-2 flex justify-between rounded-t-sm ${sponsDisplay1 ? "" : "rounded-b-sm"} bg-main text-white`}>
+                    <button onClick={() => handleClick("børnesponsorat")} ref={button1} className="font-bold text-xl text-start p-2 flex justify-between rounded-sm bg-main text-white">
                         <span>Børnesponsorat</span>
                         <span ref={carretArrow1}><IoCaretForward className="text-3xl"/></span>
                     </button>
@@ -70,7 +82,7 @@ export default function Sponsor(){
                     </p>
                 </div>
                 <div className="mb-5 flex flex-col">
-                    <button onClick={() => handleClick("lejrsponsorat")} className={`font-bold text-xl text-start p-2 flex justify-between rounded-t-sm ${sponsDisplay2 ? "" : "rounded-b-sm"} bg-main text-white`}>
+                    <button onClick={() => handleClick("lejrsponsorat")} ref={button2} className="font-bold text-xl text-start p-2 flex justify-between rounded-sm bg-main text-white">
                         <span>Lejrsponsorat</span>
                         <span ref={carretArrow2}><IoCaretForward className="text-3xl"/></span>
                     </button>
@@ -82,7 +94,7 @@ export default function Sponsor(){
                     </p>
                 </div>
                 <div className="flex flex-col">
-                    <button onClick={() => handleClick("foreningen")} className={`font-bold text-xl text-start p-2 flex justify-between rounded-t-sm ${sponsDisplay3 ? "" : "rounded-b-sm"} bg-main text-white`}>
+                    <button onClick={() => handleClick("foreningen")} ref={button3} className="font-bold text-xl text-start p-2 flex justify-between rounded-sm bg-main text-white">
                         <span>Støtte til foreningen</span>
                         <span ref={carretArrow3}><IoCaretForward className="text-3xl"/></span>
                     </button>
