@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Urbanist", sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+
+@theme{
+  --color-main: #d0000b
+}
+
+.footer-grid{
+  grid-template-rows: 2;
+}
+
+.locations-grid{
+  grid-row: 1/3;
+}
